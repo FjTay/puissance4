@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="./jeu2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="menu">
+        <div id="win"></div>
+        <div id="announce"></div>
+        <div id="wintext"></div>
+        <div id="submenu">
+            <div id="continue">
+                <span></span><p id="textContinue">Rejouer</p>
+            </div>
+            <div id="cancel">
+                <span></span><p id="textCancel">Annuler</p>
+            </div>
+        </div>
+    </div>
+    <div id="mainWrapper">
+        <div id="scorecontainer1">
+            <div id="score1">
+                <div id="displayScore1"></div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="gamecontainer">
+                <div class="column" id="0">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="column" id="1">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="column" id="2">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="column" id="3">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="column" id="4">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="column" id="5">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="column" id="6">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="column" id="7">
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="square">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        <div  id="commentsContainer">
+            <div id="comments"><span></span><p id="text"></p></div>
+        </div>
+        <div id="scorecontainer1Mob"></div>
+        <div id="scorecontainer2Mob"></div>
+        </div>
+        <div id="scorecontainer2">
+            <div id="score2">
+                <div id="displayScore2"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="./jeu2.js"></script>
+</body>
+</html>
